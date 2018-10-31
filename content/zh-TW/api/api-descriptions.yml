@@ -1,6 +1,6 @@
 app.description: 控制你的應用程式事件生命週期。
 app.methods.quit.description: >-
-  Try to close all windows. The before-quit event will be emitted first. If all windows are successfully closed, the will-quit event will be emitted and by default the application will terminate. This method guarantees that all beforeunload and unload event handlers are correctly executed. It is possible that a window cancels the quitting by returning false in the beforeunload event handler.
+  嘗試關閉所有的視窗。before-quit事件會首先被觸發。如果所有的視窗都成功關閉的話，will-quit事件將會被觸發，且預設狀況下應用程式將會終止。這個方法保證所有beforeunload以及unload事件處理器都是正確執行的。有可能一個視窗藉由在beforeunload事件處理器中返回否而取消離開。
 app.methods.exit.description: >-
   Exits immediately with exitCode.  exitCode defaults to 0. All windows will be closed immediately without asking user and the before-quit and will-quit events will not be emitted.
 app.methods.relaunch.description: >-
